@@ -1,4 +1,4 @@
-# ptrace_injection
+# Linux Process Code Injection using ptrace syscall
 Proof of concept code to use ptrace on Linux systems for injecting code in an existing process. It attaches to the given pid, halts it's execuation, backs up current instructions, injects shellcode (which forks a child process) and resumes the execution from the backed up instructions.
 
 ### Usage
